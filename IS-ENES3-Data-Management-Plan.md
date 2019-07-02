@@ -14,7 +14,7 @@
 | 1.0       | BNL      | 02/07/19  | Final Version for D1.1 |
 
 
-## Summary
+### Summary
 
 The IS-ENES3 data management plan is based on standard data management principles applied in the context of an infrastructure project supporting the earth system climate modelling community and downstream users. As the project consists of many different types of datasets, an inventory of datasets has been used to develop a set of data categories, and a separate plan is in place for each of those categories. In general, all data will be persisted in Zenodo, Github/Gitlab, or by one of the partner institutions (there are several designated data centres within the partner network), and in all cases, a curation policy will be in place. Some datasets will be entered into a sustainability register, and long-term plans developed for those data within the context of project sustainability.
 
