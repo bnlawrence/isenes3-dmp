@@ -204,9 +204,9 @@ IS-ENES3 should
 1. Identify which data will be produced by the project (as opposed to distributed by the project), by establishing an inventory.
 1. For each dataset in the inventory, either assign the responsibility for data management for that dataset to a partner organisation, or manage it directly.
 2. Where datasets will be managed by a partner, record in the inventory a short description of how the partner expects to 
-	1. Deliver on the FAIR principles for that data, and
-	2. Manage the data long-term.
-	3. (Where the partner is a designated data centre in its own right, e.g. [DKRZ](https://www.dkrz.de/services/long-term-archiving-1) or [CEDA](http://www.ceda.ac.uk/data-centres/), it will be sufficient to record the application of FAIR as being "ingestion into a designated data centre".)
+	i. Deliver on the FAIR principles for that data, and
+	i. Manage the data long-term.
+	i. (Where the partner is a designated data centre in its own right, e.g. [DKRZ](https://www.dkrz.de/services/long-term-archiving-1) or [CEDA](http://www.ceda.ac.uk/data-centres/), it will be sufficient to record the application of FAIR as being "ingestion into a designated data centre".)
 3. Where datasets will be managed by the project itself, manage them according the category principles discussed below, and enter them onto a _Sustainability Register_ which will be managed by the project's Scientific Officer as part of WP2 (Sustainability). For each dataset the sustainability task will be expected to assess whether or not a long-term archive can be found for the data.
 4. Regularly review this plan, in particular by updating the inventory.
 
@@ -216,14 +216,14 @@ Eight categories of data have been identified by the project: Software, Scientif
 
 1. **Software**: IS-ENES3 software products will be managed, distributed, and preserved on GitHub. Github delivers a complete implementation of FAIR for software. Should GitHub become unavailable during the project a similar service will be identified.
 2.  **Scientific Data from Services**. In the event that data products are deemed to be "owned" by IS-ENES3, as opposed to by the users of the service (and this has yet to be determined), the data will be initially available via that service (Findable, and Accessible, but possibly not Interoperable and Re-usable). Data products will be kept in the service environment, and added to the sustainability register, with the most likely expectation being that one of the partner data centres will be requested to curate the data (and deliver a complete FAIR implementation). To support all aspects of FAIR, all datasets will be accompanied with suitable information to support the production of discovery and browse metadata (as defined in Lawrence et al, 2009), and 
-	3. any binary data will be created using the NetCDF climate forecast conventions ([cfconventions.org](https:://cfconventions.org)), and
-	4. any images will be accompanied by a manifest in an appropriate format (to be established on a case by case basis) describing image provenance.
+	i. any binary data will be created using the NetCDF climate forecast conventions ([cfconventions.org](https:://cfconventions.org)), and
+	i. any images will be accompanied by a manifest in an appropriate format (to be established on a case by case basis) describing image provenance.
 	
 3. **Schema and Standards** will be treated like software, by using GitHub for management and distribution. Important versions will be additionally published via Zenodo to provide an additional layer of accessibility and preservation.
 4. **Input Data** is necessary for some of the services. Where such input data is "research data", if the data is not already held by a suitable scientific data repository, a copy will be deposited with a partner data centre, who will manage any issues around data access and licensing.
 5. **Survey Data and Benchmark data** are expected to be relatively low in volume, and with no existent metadata standards will either be managed by a partner institution or deposited with Zenodo, using DOIs for identifiers, and text for accompanying metadata.
 6. **Service statistics** will be published on an IS-ENES3 website, with accompanying textural metadata, and maintained for the duration of the project. 
-	* As these data are not "research" data per se, there is no clear scientific reason for preserving the data long-term, so that apart from mothballing the appropriate website pages, no long-term _curation_ for these data will be established. However, such data will likely be persisted as part of service management.
+	- As these data are not "research" data per se, there is no clear scientific reason for preserving the data long-term, so that apart from mothballing the appropriate website pages, no long-term _curation_ for these data will be established. However, such data will likely be persisted as part of service management.
 2. **Model Documentation** (from the ES-DOC activity within IS-ENES3) will be published on websites, and stored in GitHub for long-term preservation. All documents will include a universal unique identifier (UUID), and both a schema identifier and a version identifier which conform to the ES-DOC meta-model (itself, to be published in the academic literature).
 
 This data management plan takes cognisance of the fact that a  number of the partner organisations are designated data centres, that is, they conform to accepted standards of data management practice, and have comprehensive ingestion procedures to ensure FAIR data.
