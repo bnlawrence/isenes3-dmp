@@ -1,8 +1,29 @@
 # IS-ENES3 Data Management Plan
 
-Authors: Bryan Lawrence, Francesca Guglielmo, Michael Lautenschlager, Sophie Valcke
 
-Version 0.3 (25/06/19)
+
+
+*__Authors__*: Bryan Lawrence, Michael Lautenschlager, Sophie Valcke and the contributors to the initial IS-ENES3 data inventory.
+
+*__Reviewers__*: Francesca Guglielmo, Sylvie Joussaume
+
+| *Version* | *Author* | *Date*    | *Comment*              |
+|-----------|----------|-----------|------------------------|
+| 0.3       | BNL      | 26/06/19  | Released for review    |
+| 0.4       | FG, SJ   | 01/07/19  | Reviewer comments      |
+| 1.0       | BNL      | 02/07/19  | Final Version for D1.1 |
+
+
+## Summary
+
+The IS-ENES3 data management plan is based on standard data management principles applied in the context of an infrastructure project supporting the earth system climate modelling community and downstream users. As the project consists of many different types of datasets, an inventory of datasets has been used to develop a set of data categories, and a separate plan is in place for each of those categories. In general, all data will be persisted in Zenodo, Github/Gitlab, or by one of the partner institutions (there are several designated data centres within the partner network), and in all cases, a curation policy will be in place. Some datasets will be entered into a sustainability register, and long-term plans developed for those data within the context of project sustainability.
+
+#### Actions and Milestones
+
+1. Establish an inventory of data expected to be produced during the project (DONE),
+2. Use it to establish categories of data to be managed (DONE),
+3. Develop a "sub-plan" for each category, which will represent the application of the project data management principles to datasets within that category (DONE), and 
+4. Annually update the inventory (June 2020, 2021, 2022), and re-assess the plan.
 
 ## Introduction
 
@@ -13,7 +34,7 @@ community and prepare the sustainability of its infrastructure.
 2. Foster the common development of models and tools, and the efficient use of HPC.
 3. Support the exploitation of model data by the Earth system science community, the climate change impact community and the climate service community.Pursue the integration.
 
-This document outlines the data management plan for the IS-ENES3 project itself, and some principles for the longer-term sustainability of data within the shared infrastructure.
+This document outlines the data management plan for the IS-ENES3 project itself, and some principles for the longer-term sustainability of data within the shared infrastructure. It will be revised and updated at each reporting period.
 
 The document consists of four main sections:
 
@@ -127,7 +148,7 @@ Another viewpoint of IS-ENES3 is that the project has four axes, being infrastru
 2. model development and usage (by partners and third parties), and
 3. the evaluation of model simulations (by partners third parties)
 
-(With respect to data delivery, it is important to understand that the bulk of the data infrastructure is about providing services to support *discovery and distribution*. The choice of which data, and for how long it should be made available, is expressly not the responsibility of the IS-ENES3 project - being an issue for the projects and institutions which use the infrastructure.)
+With respect to data delivery, it is important to understand that the bulk of the data infrastructure is about providing services to support *discovery and distribution* of simulation data from internationally coordinated numerical experiments. The choice of which data, and for how long it should be made available, is expressly not the responsibility of the IS-ENES3 project - but the responsibility of the modelling groups that provide the data.
 
 From this perspective we might argue that the project itself could hold _no_ scientific data, insofar as the scientific data inputs and outputs belong to the users of the infrastructure. However, it will be seen, the project will create, maintain, and develop a curation plan for some datasets, but not as many as might have been anticipated a priori. Many of these will be assigned to a partner to own ongoing data management. Any datasets which need to be managed by the project (as opposed to the partners) will be added to a _sustainability register_, being a list of datasets which need addressing in the context of the sustainability work package.
 
@@ -143,28 +164,28 @@ The methodology for developing that inventory is outlined in the Appendix, here 
 
 Categories:
 
-1. (Software): For example, [ESMValTool](https://github.com/ESMValGroup/ESMValTool) (a community diagnostic and performance metrics tool for routine evaluation of Earth System Models, see [https://www.esmvaltool.org](https://esmvaltool.org)).
+1. **Software**: For example, [ESMValTool](https://github.com/ESMValGroup/ESMValTool) (a community diagnostic and performance metrics tool for routine evaluation of Earth System Models, see [https://www.esmvaltool.org](https://esmvaltool.org)).
 	* We consider _our_ software products as data entities which we need to address in the context of a data management plan. In this context _our_ means software products where we are funded to manage/direct/maintain the software itself. 
 	* We consider the maintenance of software versions _as data_, to be a key part of ensuring provenance of any data products they might produce. If the software does not produce data products, it could be argued that older versions do not need to be curated. Such data will be managed directly.
 	* We do not consider software products to which we contribute, but managed by others (including by our partners, with other funding), as _our_ products (e.g. NEMO, OAISIS-MCT, and XIOS are not IS-ENES products per se).
-2. (Scientific Data produced by services): For example, ESMValTool is being deployed as a service on the ESGF infrastructure deployed by IS-ENES3 (albeit on hardware owned by partner institutes), it will produce data products which represent evaluation of climate models. In practice their production is invoked by a third party.	
+2. **Scientific Data produced by services**: For example, ESMValTool is being deployed as a service on the ESGF infrastructure deployed by IS-ENES3 (albeit on hardware owned by partner institutes), it will produce data products which represent evaluation of climate models. In practice their production is invoked by a third party.	
 	* These data products include not only binary data, but images.
 	* It is yet to be decided whether these products should be considered as datasets for IS-ENES3 to be managed by IS-ENES3. 
 	* Whether or not IS-ENES3 manages such product data, the onus is still on IS-ENES3 to ensure that they have sufficient standardised metadata for downstream data management (by whoever).
 3. (Input datasets): For example, those needed by the ESMValTool services.
 	* It is expected that all such data should be held in a designated data centre, and have an existent plan for long-term data management. All input datasets will be assessed, and if a copy is not in an appropriate repository, a copy will be lodged with a partner designated data centre.
-3. (Schema and Standards): The CMIP Data Request schema, and accompanying documentation and tools, is an exemplar of an information standard which will underpin data production and management. 
+3. **Schema and Standards**: The CMIP Data Request schema, and accompanying documentation and tools, is an exemplar of an information standard which will underpin data production and management. 
 	* IS-ENES3 has a number of similar products. We will treat these as software, but recognise their importance to data management by others.
-3. (Survey Data) We will be surveying the community about the usage of, and requirements for, software and services. Such data will include personal information, but will also include aggregated information.
+3. **Survey Data**: We will be surveying the community about the usage of, and requirements for, software and services. Such data will include personal information, but will also include aggregated information.
 	* We will treat aggregated anonymous information as datasets. We will treat any raw data which includes personal data as "inappropriate for data management", but manage it under the GDPR. 
 	* We will either expect one of the partner institutions to "own" the data management, or if none are suitable, we will manage it directly.
-5. (Service Statistics) Service usage statistics as well as user support related information is collected and stored, and used for service planning and for key performance indication.
+5. **Service Statistics**: Service usage statistics as well as user support related information is collected and stored, and used for service planning and for key performance indication.
 	* We will treat aggregated anonymous information as datasets. We will treat any raw data which includes personal data as "inappropriate for data management", but manage it under the GDPR. 
 	* We will either expect one of the partner institutions to "own" the data management, or if none are suitable, we will manage it directly.
-4. (Benchmarking Data) Some of the tools and model development will involve the usage of benchmarking to produce evaluation data (for example, the performance and outcome quality). Such data is likely to underpin both deliverables and scientific papers. 
+4. **Benchmarking Data**: Some of the tools and model development will involve the usage of benchmarking to produce evaluation data (for example, the performance and outcome quality). Such data is likely to underpin both deliverables and scientific papers. 
 	* Where these evaluations are carried out by individuals funded by IS-ENES3, we will treat these as IS-ENES3 data products.
 	* We will either expect one of the partner institutions to "own" the data management, or if none are suitable, we will manage it directly.
-5. (Model Documentation). IS-ENES3 will acquire model documentation which will not exist elsewhere in a similar form. Such documentation will include scientific information and personal contact information.
+5. **Model Documentation**: IS-ENES3 will acquire model documentation which will not exist elsewhere in a similar form. Such documentation will include scientific information and personal contact information.
 	* The form of the documentation is actually information aggregated into documents. We will treat these as if they were formal publications, ensuring that any personal information exposed has been done so with consent.
 	* The documents will be managed directly.
 
@@ -193,27 +214,21 @@ IS-ENES3 should
 
 Eight categories of data have been identified by the project: Software, Scientific Data from Services, Input Data, Schema and Standards, Survey Data, Service Statistics, Benchmarking Data, and Model Documentation. Of these, only input data, survey data, and benchmarking data conform to the usual definition of "Research Data", where strict application of data management principles is required, however, for each category we outline below a summary of how IS-ENES3 will manage that category of data.
 
-1. Software: IS-ENES3 software products will be managed, distributed, and preserved on GitHub. Github delivers a complete implementation of FAIR for software. Should GitHub become unavailable during the project a similar service will be identified.
-2.  Scientific Data from Services. In the event that data products are deemed to be "owned" by IS-ENES3, as opposed to by the users of the service (and this has yet to be determined), the data will be initially available via that service (Findable, and Accessible, but possibly not Interoperable and Re-usable). Data products will be kept in the service environment, and added to the sustainability register, with the most likely expectation being that one of the partner data centres will be requested to curate the data (and deliver a complete FAIR implementation). To support all aspects of FAIR, all datasets will be accompanied with suitable information to support the production of discovery and browse metadata (as defined in Lawrence et al, 2009), and 
+1. **Software**: IS-ENES3 software products will be managed, distributed, and preserved on GitHub. Github delivers a complete implementation of FAIR for software. Should GitHub become unavailable during the project a similar service will be identified.
+2.  **Scientific Data from Services**. In the event that data products are deemed to be "owned" by IS-ENES3, as opposed to by the users of the service (and this has yet to be determined), the data will be initially available via that service (Findable, and Accessible, but possibly not Interoperable and Re-usable). Data products will be kept in the service environment, and added to the sustainability register, with the most likely expectation being that one of the partner data centres will be requested to curate the data (and deliver a complete FAIR implementation). To support all aspects of FAIR, all datasets will be accompanied with suitable information to support the production of discovery and browse metadata (as defined in Lawrence et al, 2009), and 
 	3. any binary data will be created using the NetCDF climate forecast conventions ([cfconventions.org](https:://cfconventions.org)), and
 	4. any images will be accompanied by a manifest in an appropriate format (to be established on a case by case basis) describing image provenance.
 	
-3. Schema and Standards will be treated like software, by using GitHub for management and distribution. Important versions will be additionally published via Zenodo to provide an additional layer of accessibility and preservation.
-4. Input Data is necessary for some of the services. Where such input data is "research data", if the data is not already held by a suitable scientific data repository, a copy will be deposited with a partner data centre, who will manage any issues around data access and licensing.
-5. Survey Data and Benchmark data are expected to be relatively low in volume, and with no existent metadata standards will either be managed by a partner institution or deposited with Zenodo, using DOIs for identifiers, and text for accompanying metadata.
-6. Service statistics will be published on an IS-ENES3 website, with accompanying textural metadata, and maintained for the duration of the project. There is no clear scientific reason for preserving the data long-term, so that apart from mothballing the appropriate website pages, no long-term curation for these data will be established.
-2. Model Documentation (from the ES-DOC activity within IS-ENES3) will be published on websites, and stored in GitHub for long-term preservation. All documents will include a unique UUID identifier, and both a schema identifier and a version identifier which conform to the ES-DOC meta-model (itself, to be published in the academic literature).
+3. **Schema and Standards** will be treated like software, by using GitHub for management and distribution. Important versions will be additionally published via Zenodo to provide an additional layer of accessibility and preservation.
+4. **Input Data** is necessary for some of the services. Where such input data is "research data", if the data is not already held by a suitable scientific data repository, a copy will be deposited with a partner data centre, who will manage any issues around data access and licensing.
+5. **Survey Data and Benchmark data** are expected to be relatively low in volume, and with no existent metadata standards will either be managed by a partner institution or deposited with Zenodo, using DOIs for identifiers, and text for accompanying metadata.
+6. **Service statistics** will be published on an IS-ENES3 website, with accompanying textural metadata, and maintained for the duration of the project. 
+	* As these data are not "research" data per se, there is no clear scientific reason for preserving the data long-term, so that apart from mothballing the appropriate website pages, no long-term _curation_ for these data will be established. However, such data will likely be persisted as part of service management.
+2. **Model Documentation** (from the ES-DOC activity within IS-ENES3) will be published on websites, and stored in GitHub for long-term preservation. All documents will include a universal unique identifier (UUID), and both a schema identifier and a version identifier which conform to the ES-DOC meta-model (itself, to be published in the academic literature).
 
 This data management plan takes cognisance of the fact that a  number of the partner organisations are designated data centres, that is, they conform to accepted standards of data management practice, and have comprehensive ingestion procedures to ensure FAIR data.
 
 - Where datasets cannot be "handed" over to a suitable partner organisation, the project will take responsibility, both by carrying out active data management during the project, and by registering such datasets on the "sustainability register". 
-	
-#### DMP Actions and Milestones
-
-1. Establish an inventory of data expected to be produced during the project (DONE),
-2. Use it to establish categories of data to be managed (DONE),
-3. Develop a "sub-plan" for each category, which will represent the application of the project data management principles to datasets within that category (DONE), and 
-4. Annually update the inventory (June 2020, 2021, 2022), and re-assess the plan.
 
 
 ## Sustainability Implications
@@ -232,7 +247,7 @@ It is expected that all datasets on the sustainability register can be further c
 2. In a format which is suitable for long-term persistence, with suitable metadata, but likely to have "long-term curation costs" (e.g. they are high volume), for which longer-term funding is necessary.
 3. Are not in a suitable state for curation, with the cost of adapting the data being unsupportable by the project itself.
 
-For all these categories, the project will take a decision as to how to proceed as part of the sustainability plans being developed in WP2/NA1. 
+For all these categories, the project will take a decision as to how to proceed as part of the sustainability plans being developed in WP2/NA1. These decisions will effectively form a first "re-appraise and consider disposal" step before long-term curation, and cannot be made until the bulk of the sustainability plan is in place. 
 
 
 ## Bibliography
