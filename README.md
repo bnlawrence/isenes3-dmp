@@ -13,3 +13,6 @@ The published version is generated using pandoc on a mac, using the following co
    ```pandoc -o isenes3-dmp-vXX.docx --reference-doc isenes3.docx IS-ENES3-Data-Management-Plan.md```
 
 where XX is adjusted as appropriate, and then Word is used to save as pdf.
+
+Releases:
+ - V1.0 2/7/19
